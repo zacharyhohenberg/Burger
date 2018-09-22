@@ -4,9 +4,9 @@ var mysql = require('mysql');
 // Create the MySQL connection object
 var connection;
 
-if (process.env.JAWSDB_URL) {
+if (process.env.calm-retreat-33762) {
 
-	connection = mysql.createConnection(process.env.JAWSDB_URL);
+	connection = mysql.createConnection(process.env.calm-retreat-33762);
 } else {
 	// DB is local on localhost
 	connection = mysql.createConnection({
