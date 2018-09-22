@@ -4,10 +4,11 @@ var mysql = require('mysql');
 // Create the MySQL connection object
 var connection;
 
-if (process.env.calm-retreat-33762) {
+if (process.env.burgers_db) {
 
-	connection = mysql.createConnection(process.env.calm-retreat-33762);
+	connection = mysql.createConnection(process.env.burgers_db);
 } else {
+
 	// DB is local on localhost
 	connection = mysql.createConnection({
 		port: 3306,
